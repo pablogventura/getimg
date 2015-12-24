@@ -39,7 +39,7 @@ query="$@"
 useragent='Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:31.0) Gecko/20100101 Firefox/31.0'
 
 # construct google link
-link="www.google.cz/search?q=${query}\&tbm=isch"
+link="www.google.cz/search?q=${query}\&tbm=isch&safe=off&tbs=isz:lt,islt:6mp"
 
 # fetch link for download
 imageslink=$(wget -e robots=off --user-agent "$useragent" -qO - "$link")
